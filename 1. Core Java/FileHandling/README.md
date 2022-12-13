@@ -5,7 +5,6 @@ Java FileWriter and FileReader classes are used to write and read data from text
 ## 1. File Writer
 
 FileWriter is useful to create a file writing characters into it. 
-
     - This class inherits from the OutputStream class.
     - The constructors of this class assume that the default character encoding and the default byte-buffer  size are acceptable.
     - To specify these values yourself, construct an OutputStreamWriter on a FileOutputStream.
@@ -25,7 +24,7 @@ FileReader is useful to read data in the form of characters from a ‘text’ fi
     - The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate. 
     - To specify these values yourself, construct an InputStreamReader on a FileInputStream. 
 
-### 3.2 Constructors
+### 2.1 Constructors
 
 - <b>FileReader(File file)</b> – Creates a FileReader , given the File to read from
 - <b>FileReader(FileDescripter fd)</b> – Creates a new FileReader , given the FileDescripter to read from
