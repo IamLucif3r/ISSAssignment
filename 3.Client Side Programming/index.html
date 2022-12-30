@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    <title>HTML Tutorial</title>
+
+</head>
+<body>
+    <h1>HTML Form Tutorial</h1>
+    
+    <!-- All forms start with a <form> element, like this:
+        1. The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
+        2. The method attribute defines which HTTP method to send the data with (usually get or post). -->
+        <form name="forms" action="/my-handling-form-page" method="post" onclick=validateForm()> 
+            <!-- To name the data in a form, you need to use the name attribute on each form widget that will collect a specific piece of data. -->
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input class="name" type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="password">Password:</label>
+                <input type="password" id="pwd" name="pwd" />
+            </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message">Send us your message!</textarea>
+              </li>
+              <!-- HiddentContents -->
+              <li>
+                
+                <input type="hidden" id="timestamp" name="timestamp" value="1286705410" />
+            </li>
+
+              <fieldset>
+                <legend>Fruit juice size</legend>
+                <p>
+                  <input type="radio" name="size" id="size_1" value="small" />
+                  <label for="size_1">Small</label>
+                </p>
+                <p>
+                  <input type="radio" name="size" id="size_2" value="medium" />
+                  <label for="size_2">Medium</label>
+                </p>
+                <p>
+                  <input type="radio" name="size" id="size_3" value="large" />
+                  <label for="size_3">Large</label>
+                </p>
+              </fieldset>
+              
+
+              <li class="button">
+                <button onclick=validateForm() type="submit">Send your message</button>
+                <button type="reset">Reset this form</button>
+                <button type="button">Do Nothing without JavaScript</button>
+              </li>
+              <script type="text/javascript" src="script.js"></script>
+
+            </ul>
+          </form>
+          
+
+
+</body>
+</html>
